@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LLSegmentBar
 
 [![CI Status](http://img.shields.io/travis/416997919@qq.com/LLSegmentBar.svg?style=flat)](https://travis-ci.org/416997919@qq.com/LLSegmentBar)
@@ -57,3 +58,6 @@ config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor redColor])
 ## License
 
 LLSegmentBar is available under the MIT license. See the LICENSE file for more info.
+=======
+# LLSegmentBar
+>>>>>>> 7e4ce6d648fefc09a01461c8ab0accfc77553327
