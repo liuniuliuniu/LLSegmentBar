@@ -1,0 +1,6 @@
+framework module Pods_LLSegmentBar_Example {
+  umbrella header "Pods-LLSegmentBar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

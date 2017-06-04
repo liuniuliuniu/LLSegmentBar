@@ -1,0 +1,16 @@
+PODS:
+  - LLSegmentBar (0.1.0)
+
+DEPENDENCIES:
+  - LLSegmentBar (from `../`)
+
+EXTERNAL SOURCES:
+  LLSegmentBar:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LLSegmentBar: 399c17b883d1df3e9ab1fc267d1829d5f5382698
+
+PODFILE CHECKSUM: 6117ca00f04c84b2dd015ab56bb23a6d7e897fec
+
+COCOAPODS: 1.2.1
