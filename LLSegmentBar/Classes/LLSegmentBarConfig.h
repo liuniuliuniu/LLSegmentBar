@@ -20,6 +20,7 @@
 @property (nonatomic, assign) CGFloat indicatorH;
 @property (nonatomic, assign) CGFloat indicatorW;
 
+
 /**默认颜色*/
 @property (nonatomic, copy, readonly) LLSegmentBarConfig *(^itemNormalColor)(UIColor *color);
 /**选中颜色*/

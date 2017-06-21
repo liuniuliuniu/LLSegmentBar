@@ -10,6 +10,10 @@
 #endif
 #endif
 
+#import "LLSegmentBar.h"
+#import "LLSegmentBarConfig.h"
+#import "LLSegmentBarVC.h"
+#import "UIView+LLSegmentBar.h"
 
 FOUNDATION_EXPORT double LLSegmentBarVersionNumber;
 FOUNDATION_EXPORT const unsigned char LLSegmentBarVersionString[];

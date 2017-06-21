@@ -24,10 +24,8 @@
 		783A37C98E732772E058B8AE /* Pods_LLSegmentBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC9673CED259327E7B9E65A /* Pods_LLSegmentBar_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		C883C52116D5859AF5DA32BE /* Pods_LLSegmentBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F35A85E977635ACAAC54FA /* Pods_LLSegmentBar_Example.framework */; };
-		D21F30CA1EE2FE140043C94B /* UIView+LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D21F30C91EE2FE140043C94B /* UIView+LLSegmentBar.m */; };
-		D21F30CD1EE2FE6C0043C94B /* LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D21F30CC1EE2FE6C0043C94B /* LLSegmentBar.m */; };
-		D21F30D01EE2FEBF0043C94B /* LLSegmentBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D21F30CF1EE2FEBF0043C94B /* LLSegmentBarConfig.m */; };
-		D21F30D31EE306D30043C94B /* LLSegmentBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D21F30D21EE306D30043C94B /* LLSegmentBarVC.m */; };
+		D20EDEDE1EFAB236000099E2 /* LLOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EDEDD1EFAB236000099E2 /* LLOneViewController.m */; };
+		D20EDEE11EFAB33B000099E2 /* LLTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EDEE01EFAB33B000099E2 /* LLTwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,14 +68,10 @@
 		A740A37370484401816B1141 /* LLSegmentBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LLSegmentBar.podspec; path = ../LLSegmentBar.podspec; sourceTree = "<group>"; };
 		AC44E06F6BB0A87E8DCE1B3D /* Pods-LLSegmentBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLSegmentBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLSegmentBar_Tests/Pods-LLSegmentBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B456960D6F1024F274C5E7DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D21F30C81EE2FE140043C94B /* UIView+LLSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLSegmentBar.h"; sourceTree = "<group>"; };
-		D21F30C91EE2FE140043C94B /* UIView+LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLSegmentBar.m"; sourceTree = "<group>"; };
-		D21F30CB1EE2FE6C0043C94B /* LLSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBar.h; sourceTree = "<group>"; };
-		D21F30CC1EE2FE6C0043C94B /* LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBar.m; sourceTree = "<group>"; };
-		D21F30CE1EE2FEBF0043C94B /* LLSegmentBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBarConfig.h; sourceTree = "<group>"; };
-		D21F30CF1EE2FEBF0043C94B /* LLSegmentBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBarConfig.m; sourceTree = "<group>"; };
-		D21F30D11EE306D30043C94B /* LLSegmentBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBarVC.h; sourceTree = "<group>"; };
-		D21F30D21EE306D30043C94B /* LLSegmentBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBarVC.m; sourceTree = "<group>"; };
+		D20EDEDC1EFAB236000099E2 /* LLOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOneViewController.h; sourceTree = "<group>"; };
+		D20EDEDD1EFAB236000099E2 /* LLOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOneViewController.m; sourceTree = "<group>"; };
+		D20EDEDF1EFAB33B000099E2 /* LLTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTwoViewController.h; sourceTree = "<group>"; };
+		D20EDEE01EFAB33B000099E2 /* LLTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTwoViewController.m; sourceTree = "<group>"; };
 		D6D8CB3BBBD6C5251F14B0BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,17 +143,13 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LLViewController.h */,
 				6003F5A6195388D20070C39A /* LLViewController.m */,
+				D20EDEDC1EFAB236000099E2 /* LLOneViewController.h */,
+				D20EDEDD1EFAB236000099E2 /* LLOneViewController.m */,
+				D20EDEDF1EFAB33B000099E2 /* LLTwoViewController.h */,
+				D20EDEE01EFAB33B000099E2 /* LLTwoViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				D21F30C81EE2FE140043C94B /* UIView+LLSegmentBar.h */,
-				D21F30C91EE2FE140043C94B /* UIView+LLSegmentBar.m */,
-				D21F30CB1EE2FE6C0043C94B /* LLSegmentBar.h */,
-				D21F30CC1EE2FE6C0043C94B /* LLSegmentBar.m */,
-				D21F30CE1EE2FEBF0043C94B /* LLSegmentBarConfig.h */,
-				D21F30CF1EE2FEBF0043C94B /* LLSegmentBarConfig.m */,
-				D21F30D11EE306D30043C94B /* LLSegmentBarVC.h */,
-				D21F30D21EE306D30043C94B /* LLSegmentBarVC.m */,
 			);
 			name = "Example for LLSegmentBar";
 			path = LLSegmentBar;
@@ -414,13 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21F30CA1EE2FE140043C94B /* UIView+LLSegmentBar.m in Sources */,
+				D20EDEDE1EFAB236000099E2 /* LLOneViewController.m in Sources */,
 				6003F59E195388D20070C39A /* LLAppDelegate.m in Sources */,
-				D21F30CD1EE2FE6C0043C94B /* LLSegmentBar.m in Sources */,
 				6003F5A7195388D20070C39A /* LLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				D21F30D01EE2FEBF0043C94B /* LLSegmentBarConfig.m in Sources */,
-				D21F30D31EE306D30043C94B /* LLSegmentBarVC.m in Sources */,
+				D20EDEE11EFAB33B000099E2 /* LLTwoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

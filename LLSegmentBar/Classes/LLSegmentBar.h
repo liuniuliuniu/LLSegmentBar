@@ -37,7 +37,7 @@
 /**代理*/
 @property (nonatomic,weak) id<LLSegmentBarDelegate> delegate;
 /**数据源*/
-@property(nonatomic, strong)NSArray<NSString *> *items;
+@property (nonatomic, strong)NSArray<NSString *> *items;
 /**当前选中的索引，双向设置*/
 @property (nonatomic,assign) NSInteger selectIndex;
 

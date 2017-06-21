@@ -9,6 +9,8 @@
 #import "LLViewController.h"
 #import "LLSegmentBarVC.h"
 
+#import "LLOneViewController.h"
+
 
 @interface LLViewController ()
 
@@ -44,7 +46,7 @@
     NSArray *items = @[@"item-one", @"item-two", @"item-three"];
     
     // 4 在contentView, 展示子控制器的视图内容
-    UIViewController *vc1 = [UIViewController new];
+    LLOneViewController *vc1 = [LLOneViewController new];
     vc1.view.backgroundColor = [UIColor redColor];
     UIViewController *vc2 = [UIViewController new];
     vc2.view.backgroundColor = [UIColor greenColor];
@@ -52,10 +54,16 @@
     vc3.view.backgroundColor = [UIColor yellowColor];
     [self.segmentVC setUpWithItems:items childVCs:@[vc1,vc2,vc3]];
     
+    
     // 5  配置基本设置  采用链式编程模式进行设置
     [self.segmentVC.segmentBar updateWithConfig:^(LLSegmentBarConfig *config) {
+        
         config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor redColor]).indicatorColor([UIColor greenColor]);
+        
     }];
+    
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_bg_64"] forBarMetrics:UIBarMetricsDefault];
     
 	
 }

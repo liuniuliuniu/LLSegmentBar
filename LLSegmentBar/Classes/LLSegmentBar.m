@@ -60,9 +60,11 @@
 }
 
 -  (void)setSelectIndex:(NSInteger)selectIndex{
+        
     if (self.items.count == 0 || selectIndex < 0 || selectIndex > self.itemBtns.count- 1) {
         return;
     }
+    
     
     _selectIndex = selectIndex;
     UIButton *btn = self.itemBtns[selectIndex];
@@ -111,7 +113,7 @@
     }];
 
     // 滚动到Btn的位置
-    CGFloat scrollX = _lastBtn.centerX - self.contentView.width * 0.5;
+    CGFloat scrollX = sender.centerX - self.contentView.width * 0.5;
     
     // 考虑临界的位置
     if (scrollX < 0) {
@@ -145,7 +147,9 @@
         [btn sizeToFit];
         
         btn.y = 0;
+        
         btn.x = lastX;
+        
         lastX += btn.width + caculateMargin;
     }
     
@@ -172,6 +176,7 @@
     }
     return _itemBtns;
 }
+
 - (UIView *)indicatorView {
     if (!_indicatorView) {
         CGFloat indicatorH = self.config.indicatorH;

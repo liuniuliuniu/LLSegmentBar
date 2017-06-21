@@ -21,7 +21,7 @@
     if (!_segmentBar) {
         LLSegmentBar *segmentBar = [LLSegmentBar segmentBarWithFrame:CGRectZero];
         segmentBar.delegate = self;
-        segmentBar.backgroundColor = [UIColor brownColor];
+        segmentBar.backgroundColor = [UIColor greenColor];
         [self.view addSubview:segmentBar];
         _segmentBar = segmentBar;
     }
@@ -58,13 +58,14 @@
     }
     
     self.contentView.contentSize = CGSizeMake(items.count * self.view.width, 0);
+    
     self.segmentBar.selectIndex = 0;
 
 }
 
 - (void)showChildVCViewAtIndex:(NSInteger)index{
     
-    if (self.childViewControllers.count == 0 || index < 0) {
+    if (self.childViewControllers.count == 0 || index < 0 || index > self.childViewControllers.count - 1) {
         return;
     }
     
