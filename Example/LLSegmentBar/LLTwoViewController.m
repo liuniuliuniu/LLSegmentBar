@@ -41,6 +41,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.segContentVC.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+        
     [self.view addSubview:self.segContentVC.view];
     
     NSMutableArray *arrM = [NSMutableArray array];

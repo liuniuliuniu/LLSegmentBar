@@ -113,7 +113,7 @@
     }];
 
     // 滚动到Btn的位置
-    CGFloat scrollX = sender.centerX - self.contentView.width * 0.5;
+    CGFloat scrollX = sender.x - self.contentView.width * 0.5;
     
     // 考虑临界的位置
     if (scrollX < 0) {

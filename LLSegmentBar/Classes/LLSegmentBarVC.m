@@ -19,7 +19,7 @@
 
 - (LLSegmentBar *)segmentBar{
     if (!_segmentBar) {
-        LLSegmentBar *segmentBar = [LLSegmentBar segmentBarWithFrame:CGRectZero];
+        LLSegmentBar *segmentBar = [LLSegmentBar segmentBarWithFrame:self.view.bounds];
         segmentBar.delegate = self;
         segmentBar.backgroundColor = [UIColor greenColor];
         [self.view addSubview:segmentBar];
@@ -82,6 +82,7 @@
     [super viewWillLayoutSubviews];
     
     if (self.segmentBar.superview == self.view) {
+        
         self.segmentBar.frame = CGRectMake(0, 60, self.contentView.width, 35);
         
         CGFloat contentViewY = self.segmentBar.y + self.segmentBar.height;
