@@ -21,9 +21,11 @@
 
 @implementation LLViewController
 
+// lazy init
 - (LLSegmentBarVC *)segmentVC{
     if (!_segmentVC) {
         LLSegmentBarVC *vc = [[LLSegmentBarVC alloc]init];
+        // 添加到到控制器
         [self addChildViewController:vc];
         _segmentVC = vc;
     }
@@ -34,32 +36,30 @@
 {
     [super viewDidLoad];
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
     // 1 设置segmentBar的frame
     self.segmentVC.segmentBar.frame = CGRectMake(0, 0, 320, 35);
     self.navigationItem.titleView = self.segmentVC.segmentBar;
-    // 2 添加控制器的V
+    
+    // 2 添加控制器的View
     self.segmentVC.view.frame = self.view.bounds;
     [self.view addSubview:self.segmentVC.view];
     
-    // 3 设置标题
-    NSArray *items = @[@"item-one", @"item-two", @"item-three"];
     
-    // 4 在contentView, 展示子控制器的视图内容
+    NSArray *items = @[@"item-one", @"item-two", @"item-three"];
     LLOneViewController *vc1 = [LLOneViewController new];
     vc1.view.backgroundColor = [UIColor redColor];
     UIViewController *vc2 = [UIViewController new];
     vc2.view.backgroundColor = [UIColor greenColor];
     UIViewController *vc3 = [UIViewController new];
     vc3.view.backgroundColor = [UIColor yellowColor];
+    
+    // 3 添加标题数组和控住器数组
     [self.segmentVC setUpWithItems:items childVCs:@[vc1,vc2,vc3]];
     
     
-    // 5  配置基本设置  采用链式编程模式进行设置
+    // 4  配置基本设置  可采用链式编程模式进行设置
     [self.segmentVC.segmentBar updateWithConfig:^(LLSegmentBarConfig *config) {
-        
         config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor redColor]).indicatorColor([UIColor greenColor]);
-        
     }];
     
     

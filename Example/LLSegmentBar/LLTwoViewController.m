@@ -7,22 +7,22 @@
 //
 
 #import "LLTwoViewController.h"
-
 #import "LLSegmentBarVC.h"
+
 
 #define random(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
-@interface LLTwoViewController ()
 
+@interface LLTwoViewController ()
 @property (nonatomic, weak) LLSegmentBarVC *segContentVC;
 
 @end
 
 @implementation LLTwoViewController
 
-
+// lazy init
 - (LLSegmentBarVC *)segContentVC{
     if (!_segContentVC) {
         LLSegmentBarVC *contentVC = [[LLSegmentBarVC alloc]init];
@@ -40,10 +40,11 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    // 1 设置控制器V的frame
     self.segContentVC.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-        
     [self.view addSubview:self.segContentVC.view];
     
+    // 2 控制器数组和标题数组
     NSMutableArray *arrM = [NSMutableArray array];
     NSMutableArray *titleArrM = [NSMutableArray arrayWithCapacity:10];
     for (NSInteger i = 0; i < 10; i++) {
@@ -54,7 +55,7 @@
         [arrM addObject:VC];
     }
     
-    
+    // 3 添加
     [self.segContentVC setUpWithItems:titleArrM childVCs:arrM];
     
 }

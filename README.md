@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # LLSegmentBar
 
 [![CI Status](http://img.shields.io/travis/416997919@qq.com/LLSegmentBar.svg?style=flat)](https://travis-ci.org/416997919@qq.com/LLSegmentBar)
@@ -6,16 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LLSegmentBar.svg?style=flat)](http://cocoapods.org/pods/LLSegmentBar)
 [![Platform](https://img.shields.io/cocoapods/p/LLSegmentBar.svg?style=flat)](http://cocoapods.org/pods/LLSegmentBar)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
 ## Installation
-
-LLSegmentBar is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
 ```ruby
 pod "LLSegmentBar"
@@ -29,10 +19,10 @@ self.navigationItem.titleView = self.segmentVC.segmentBar;
 self.segmentVC.view.frame = self.view.bounds;
 [self.view addSubview:self.segmentVC.view];
 
-// 3 设置标题
-NSArray *items = @[@"item-one", @"item-two", @"item-three"];
 
-// 4 在contentView, 展示子控制器的视图内容
+
+// 3 添加控制器数组和标题数组
+NSArray *items = @[@"item-one", @"item-two", @"item-three"];
 UIViewController *vc1 = [UIViewController new];
 vc1.view.backgroundColor = [UIColor redColor];
 UIViewController *vc2 = [UIViewController new];
@@ -53,11 +43,12 @@ config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor redColor])
 
 ## Author
 
-416997919@qq.com, 416997919@qq.com
+* 代码使用过程中，发现任何问题，可以随时issue
+* 如果有更多建议或者想法也可以直接联系我 QQ:416997919
+* 本人简书地址  也可随时在简书留言
+* 觉得框架对你有一点点帮助的，就请支持下，点个赞。
+
 
 ## License
 
 LLSegmentBar is available under the MIT license. See the LICENSE file for more info.
-=======
-# LLSegmentBar
->>>>>>> 7e4ce6d648fefc09a01461c8ab0accfc77553327
