@@ -48,7 +48,7 @@ config.itemNormalColor([UIColor blackColor]).itemSelectColor([UIColor redColor])
 
 * 代码使用过程中，发现任何问题，可以随时issue
 * 如果有更多建议或者想法也可以直接联系我 QQ:416997919
-* 本人简书地址  也可随时在简书留言
+* 本人简书地址  也可随时在简书留言 [奥卡姆剃须刀](http://www.jianshu.com/u/f9cc13708dfc)
 * 觉得框架对你有一点点帮助的，就请支持下，点个赞。
 
 
