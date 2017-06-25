@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/LLSegmentBar.svg?style=flat)](http://cocoapods.org/pods/LLSegmentBar)
 [![Platform](https://img.shields.io/cocoapods/p/LLSegmentBar.svg?style=flat)](http://cocoapods.org/pods/LLSegmentBar)
 
+ ![LLSegmentBar.gif](https://github.com/liuniuliuniu/LLSegmentBar/blob/master/LLSegmentBar.gif)
+
+
 ## Installation
 
 ```ruby
